@@ -1,0 +1,46 @@
+.TestWrapper{
+    width: 100vw;
+    color: #FCFCFC;
+    /* background-color: #2C2C2C; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Test{
+  background: url('../../assets/images/testBG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.TestHeader {
+  font-size: 1.7em;
+  margin: 50px 0 20px 0;
+}
+
+.LinkButton {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #FCFCFC;
+    transition: 0.3s;
+  }
+
+.LinkButton:hover{
+  color: #1089FF
+}
+  
+
+  @media only screen and (max-width: 768px) {
+    .TestWrapper {
+      width: 100vw;
+      box-shadow: none;
+      margin: 0;
+    }
+    .TestHeader {
+      font-size: 1.5em;
+      line-height: 5.5vh;
+      margin: 40px 0 20px 0;
+    }
+  }

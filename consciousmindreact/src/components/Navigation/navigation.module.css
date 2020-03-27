@@ -1,0 +1,107 @@
+.Navigation {
+    width: 100%;
+}
+
+.NavigationContainer {
+  margin: auto;
+  width: 85%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Brand {
+    width: 35vw;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+.Links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 10em;
+  }
+
+.Link {
+    text-decoration: none;
+    color: #FCFCFC;
+    font-size: 0.9em;
+    transition: 0.3s;
+  }
+
+.Link:hover {
+  color: #1089FF;
+}
+
+
+
+.SideBarContainer{
+  margin: 30px 0 0 0; 
+}
+
+.MobileLink {
+  padding: 12px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.MobileLink:hover {
+  color: #f1f1f1;
+}
+
+
+.CloseButton{
+  position: absolute;
+  color: #818181;
+  top: 20px;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.CloseButton:hover{
+  color: #f1f1f1;
+}
+
+.OpenButton{
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+.SideBar{
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: left;
+  display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .Links {
+    display: none;
+  }
+  .OpenButton{
+    display: block;
+  }
+  .SideBar{
+    display: block;
+  }
+}
+

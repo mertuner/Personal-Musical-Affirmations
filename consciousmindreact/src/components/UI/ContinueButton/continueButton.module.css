@@ -1,0 +1,58 @@
+.Button {
+    color: #FCFCFC;
+    width: 11em;
+    height: 3.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 5vh 0;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+
+.RightArrow {
+    position: relative;
+    left: 15px;
+    padding-top: 4px;
+}
+
+.LeftArrow {
+  position: relative;
+  right: 15px;
+  padding-top: 4px;
+}
+
+@-webkit-keyframes rightAnimation {
+    from {left: 15px}
+    to {left: 30px}
+  } 
+  
+/* Standard syntax */
+@keyframes rightAnimation {
+    from {left: 15px}
+    to {left: 30px}
+  }
+
+@-webkit-keyframes leftAnimation {
+    from {right: 15px}
+    to {right: 30px}
+  } 
+  
+/* Standard syntax */
+@keyframes leftAnimation {
+    from {right: 15px}
+    to {right: 30px}
+  }
+
+.Button:hover .RightArrow{
+    -webkit-animation: rightAnimation 0.8s infinite; /* Safari 4.0 - 8.0 */
+    animation: rightAnimation 0.8s infinite;
+}
+
+.Button:hover .LeftArrow{
+  -webkit-animation: leftAnimation 0.8s infinite; /* Safari 4.0 - 8.0 */
+  animation: leftAnimation 0.8s infinite;
+}
+

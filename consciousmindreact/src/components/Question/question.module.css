@@ -1,0 +1,85 @@
+.QuestionContainer {
+    margin: 5vh auto 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #324357;
+    padding: 35px 20px 5px 35px;
+    text-align: left;
+}
+
+.Question {
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 5vh 0 3vh 0;
+}
+
+.QuestionNumber {
+    font-weight: 700;
+}
+
+.Answer {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: 1vh 0 0 -8px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 27px 0 27px 38px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+
+.OldButton {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.RadioBtn {
+    width: 17px;
+    height: 17px;
+    background-color: #D8E9FF;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+}
+
+
+
+.Answer:hover{
+    background-color: #324357;
+}
+
+.OldButton:checked ~ .RadioBtn{
+    background-color: #6DECB9;
+}
+
+
+  @media only screen and (max-width: 768px) {
+    .QuestionContainer {
+        width: 80%;
+        text-align: left;
+        box-shadow: none;
+    }
+
+    .Answer {
+        box-shadow: 0 0 3px #324357;
+        margin: 5px 0 5px 0;
+    }
+    .Answer:hover{
+        background-color: #23374D;
+    }
+  }

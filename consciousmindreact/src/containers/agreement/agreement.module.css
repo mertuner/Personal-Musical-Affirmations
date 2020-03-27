@@ -1,0 +1,18 @@
+.AgreementContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.InnerContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6DECB9;
+    padding: 5vh 5vw 5vh 5vw;
+}

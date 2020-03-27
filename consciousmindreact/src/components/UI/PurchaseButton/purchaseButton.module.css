@@ -1,0 +1,14 @@
+.Button {
+    color: #FCFCFC;
+    padding: 1em 3.5em 1em 3.5em;
+    background-image: linear-gradient(to right, #2BABD1 , #005BD0);
+    margin: 3vh 0 4vh 0;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+    

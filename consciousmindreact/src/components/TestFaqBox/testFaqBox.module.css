@@ -1,0 +1,38 @@
+.FaqContainer {
+    height: 235.7px;
+    width: 330px;
+    border: 2px solid #6DECB9;
+    border-radius: 5px;
+    margin: 20px 20px 60px 20px;
+}
+
+.FaqBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 95%;
+    margin: auto;
+}
+
+.FaqAvatar{
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FaqName{
+    color: #FCFCFC;
+    font-size: 0.9em;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+
+.FaqDescription{
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.2rem;
+}

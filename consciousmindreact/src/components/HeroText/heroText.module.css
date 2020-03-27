@@ -1,0 +1,119 @@
+.HeroWrapper {
+    width: 100%;
+    margin: auto;
+    margin-top: 18vh;
+    -webkit-animation-name: heroAnimation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;  /* Safari 4.0 - 8.0 */
+    animation-name: heroAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    text-align: center;
+}
+@-webkit-keyframes heroAnimation {
+    0% {margin-top: 40vh; opacity: 0;}
+    100% {margin-top: 18vh; opacity: 1;}
+  } 
+  
+/* Standard syntax */
+@keyframes heroAnimation {
+    0% {margin-top: 40vh; opacity: 0;}
+    100% {margin-top: 18vh; opacity: 1;}
+  }
+  
+@-webkit-keyframes mobileHeroAnimation {
+    0% {margin-top: 50vh; opacity: 0;}
+    100% {margin-top: 20vh; opacity: 1;}
+  } 
+/* Standard syntax */
+@keyframes mobileHeroAnimation {
+    0% {margin-top: 50vh; opacity: 0;}
+    100% {margin-top: 20vh; opacity: 1;}
+  }
+  
+
+.BigText {
+    font-weight: 400;
+    font-size: 3em;
+    white-space: pre;
+}   
+
+.MottoText {
+    font-weight: 400;
+    white-space: pre;
+    line-height: 2.8rem;
+    font-size: 1.2em;
+  }
+
+  @media only screen and (max-width: 768px){
+    .HeroWrapper {
+      margin-top: 20vh;
+      -webkit-animation-name: mobileHeroAnimation; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-timing-function: linear;  /* Safari 4.0 - 8.0 */
+      animation-name: mobileHeroAnimation;
+      animation-duration: 1.5s;
+      animation-timing-function: ease;
+    }
+    .BigText {
+      font-size: 2.1em;
+      line-height: 3rem;
+    }
+    .MottoText {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media only screen and (min-height: 1024px) and (max-width: 1024px){
+    .HeroWrapper {
+      margin-top: 40%; 
+      animation-name: none;
+      -webkit-animation-name: none;
+    }
+  }
+
+ 
+  
+  
+  
+  @media only screen and (min-width: 768px) {
+    .BigText {
+      font-size: 3em;
+    }
+    .MottoText {
+      font-size: 1.2em;
+    }
+    .HeroWrapper {
+      text-align: left;
+    }
+  }
+
+  
+  @media only screen and (min-width: 1024px) {
+    .BigText {
+      font-size: 3.3em;
+    }
+    .MottoText {
+      font-size: 1.5em;
+    }
+    .HeroWrapper {
+      text-align: left;
+    }
+  }
+  
+  @media only screen and (min-width: 1400px) {
+    .BigText {
+      font-size: 4em;
+    }
+    .MottoText {
+      font-size: 1.7em;
+    }
+  }
+  @media only screen and (min-width: 2560px) {
+    .BigText {
+      font-size: 5.5em;
+    }
+    .MottoText {
+      font-size: 2.2em;
+    }
+  }

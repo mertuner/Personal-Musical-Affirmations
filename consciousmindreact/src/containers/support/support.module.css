@@ -1,0 +1,86 @@
+.SupportFormContainer{
+    height: 80vh;
+    width: 60%;
+    display: flex;
+    margin: 5vh auto 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #6DECB9;
+    background-color: #2C2C2C;
+}
+
+.SupportForm {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    /* margin-left: 20px; */
+    
+}
+
+.SupportFormInput {
+    height: 25px;
+    width: 200px;
+    padding: 0 0 5px 0;
+    background-color: #2C2C2C;
+    border: none;
+    border-bottom: 1px solid #707070;
+    color: #FCFCFC;
+    font-size: 1em;
+}
+
+.SupportFormInput:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #1089FF;
+    font-size: 0.9em;
+}
+
+.SupportFormTextArea {
+    width: 35vw;
+    padding: 15px 15px 5px 15px;
+    box-sizing: border-box;
+    background-color: #2C2C2C;
+    border-radius: 8px;
+    border: 1px solid #707070;
+    color: #FCFCFC;
+    font-size: 1em;
+}
+.SupportFormTextArea:focus{
+    border: none;
+    outline: none;
+    border: 1px solid #1089FF;
+    /* font-size: 0.9em; */
+}
+.LinkButton {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #FCFCFC;
+    padding: 7px 18px 7px 18px;
+    border: 1px solid #FCFCFC;
+    border-radius: 24px;
+  }
+  
+.LinkButton:hover {
+    color: #FCFCFC;
+    border: 1px solid #FCFCFC;
+    box-shadow: 0 0 5px;
+  }
+
+
+@media only screen and (max-width: 768px) {
+    .SupportFormContainer{
+        width: 90%;
+        justify-content: space-evenly;
+    }
+    .SupportFormInput{
+        width: 250px;
+    }
+    .SupportFormTextArea{
+        width: 70vw;
+    }
+
+}

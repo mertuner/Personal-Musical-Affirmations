@@ -1,0 +1,357 @@
+.HeaderContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.PersonFormHeader {
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.ImageBox {
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    margin-left: 25vw;
+}
+
+.ButtonContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.AffImageContainer {
+    position: relative;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.InsImageContainer {
+    position: relative;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ImgHeaderText{
+    margin-top: 6vh;
+    font-size: 1.2em;
+}
+
+.BirthdayContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BirthdayText {
+    color: #D0D0D0;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+
+.UserFormContainer{
+    height: 80vh;
+    width: 60%;
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #6DECB9;
+    background-color: #2C2C2C;
+}
+
+
+.HeroText {
+    font-size: 2.4em;
+    font-weight: 600;
+}
+
+.UserForm {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.UserFormInput {
+    height: 25px;
+    width: 300px;
+    padding: 0 0 5px 0;
+    background-color: #2C2C2C;
+    border: none;
+    border-bottom: 1px solid #707070;
+    color: #FCFCFC;
+    font-size: 1em;
+}
+
+.UserFormInput:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #1089FF;
+    font-size: 0.9em;
+}
+
+
+.ResultContainer {
+    width: 100vw;
+    text-align: left;
+    line-height: 1.5em;
+    display: flex;
+    height: 100vh;
+    background: url('../../../assets//images/playerBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cancel {
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    width: 25px;
+    height: 25px;
+    background: url('../../../assets//images/back.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.AffirmationText {
+    font-size: 2.2em;
+    animation-name: affirmation;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    text-align: center;
+    line-height: 2.7rem;
+    width: 90vw;
+}
+
+@-webkit-keyframes affirmation {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+  } 
+  
+/* Standard syntax */
+@keyframes affirmation {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+/* 
+.ResultName{
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 40px 0 20px 0;
+}
+
+.ResultSummary {
+    width: 100%;
+} */
+
+.ResultStyleBox{
+    display: flex;
+    width: 100%;
+    margin-top: 5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ResultStyle {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.PaymentContainer{
+    width: 60vw;
+    display: flex;
+    background-color: #2C2C2C;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    margin-top: 5vh;
+    border-radius: 5px;
+    border: 2px solid #6DECB9;
+}
+
+.PaymentForm {
+    width: 75%;
+    margin: 0 0 0 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.PriceContainer {
+    margin: 30px 0 0 50px;
+    font-size: 0.9em;
+}
+
+.PaymentInput {
+    height: 25px;
+    width: 150px;
+    padding: 0 0 5px 0;
+    background-color: #2C2C2C;
+    border: none;
+    border-bottom: 1px solid #707070;
+    color: #FCFCFC;
+}
+
+
+.PaymentInput:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #1089FF;
+    font-size: 0.9em;
+}
+
+.PaymentInput::placeholder{
+    font-size: 1.2em;
+}
+
+.CheckContainer {
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px 0  0 50px;
+    font-size: 0.8em;
+    color: #D0D0D0;
+    text-align: left;
+    line-height: 1.1rem;
+}
+
+
+
+.WeePayContainer{
+    width: 80%;
+    border-radius: 10px;
+    margin: 20px auto 10px auto; 
+}
+
+.InputContainer{
+    margin: 0 60px 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.MyDropDownControl{
+    border: 1px solid #324357 !important;
+    border-radius: 4px !important;
+    box-sizing: border-box;
+    color: #B4B4B4 !important;
+    padding: 14px 45px 14px 10px !important;
+    background-color: #2C2C2C !important;
+}
+
+.MyDropDownMenu{
+    border: 1px solid #324357 !important;
+    max-height: 100px !important;
+}
+
+.MyDropDownMenu > div {
+    color: #FCFCFC !important;
+}
+
+.MyDropDownMenu > div:hover {
+    background-color: #324357 !important;
+}
+
+.MyDropDownMenu > div:not(.is-select) {
+    background-color: #2C2C2C !important;
+}
+
+.MyDropDownMenu::-webkit-scrollbar{
+    background: #2C2C2C !important;
+    width: 10px;
+    height: 5px;
+}
+
+.MyDropDownMenu::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey !important;
+}
+
+.MyDropDownMenu::-webkit-scrollbar-thumb{
+    background: #FCFCFC !important;
+    padding: 0 1px 1px 0;
+    border-radius: 5px;
+}
+
+.MyDropDownMenu::-webkit-scrollbar-corner{
+    background: #2C2C2C !important;
+    box-shadow: inset 0 0 5px grey !important;
+}
+
+.MyDropDownArrow{
+    right: 10px !important;
+    top: 22px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .ImageBox {
+        display: none;
+    }
+    .UserFormContainer{
+        width: 90%;
+        justify-content: space-evenly;
+    }
+    .UserFormInput{
+        width: 250px;
+    }
+    .BirthdayText{
+        padding-left: 2px;
+    }
+    .ButtonContainer {
+        flex-direction: column-reverse;
+    }
+    .AffImageContainer {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .InsImageContainer {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .ResultContainer {
+        width: 100vw;
+    }
+    .PaymentContainer{
+        /* height: 100vh; */
+        width: 90%;
+        margin-top: 3vh;
+    }
+    .PaymentForm{
+        width: 90%;
+    }
+    .ThankContainer{
+        width: 90%;
+    }
+    .WeePayContainer {
+        background-color: white;
+    }
+  }

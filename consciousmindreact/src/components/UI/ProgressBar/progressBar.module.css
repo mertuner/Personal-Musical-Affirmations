@@ -1,0 +1,17 @@
+.ProgressBar {
+    width: 45vw;
+    height: 30px;
+    margin: 5vh auto 0 auto;
+    position: relative;
+    border: 3px solid #324357;
+    border-radius: 50px;
+    padding: 2px 2px 2px 2px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .ProgressBar {
+        width: 80vw;
+    }
+  }
